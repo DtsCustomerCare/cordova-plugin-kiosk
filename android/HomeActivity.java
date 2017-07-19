@@ -24,7 +24,7 @@ public class HomeActivity extends Activity {
         LayoutParams params = new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT);
         
         Button button = new Button(this);
-        button.setText("Click or press any key to begin...");
+        button.setText("Via Verde - Kiosk, toque no ecrã para começar...");
         button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 HomeActivity.this.startKioskActivity();
