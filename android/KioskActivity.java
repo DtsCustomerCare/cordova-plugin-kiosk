@@ -44,7 +44,13 @@ public class KioskActivity extends CordovaActivity {
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         return true; // prevent event from being propagated
     }
-    
+
+    @Override
+    public void onBackPressed() {
+        // nothing to do here
+        // … really      
+    }
+
     // http://www.andreas-schrade.de/2015/02/16/android-tutorial-how-to-create-a-kiosk-mode-in-android/
     @Override
     public void onWindowFocusChanged(boolean hasFocus) {

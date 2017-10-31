@@ -24,7 +24,7 @@ public class HomeActivity extends Activity {
         LayoutParams params = new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT);
         
         Button button = new Button(this);
-        button.setText("Via Verde - Kiosk, toque no ecrã para começar...");
+        button.setText("Via Verde, toque no ecrã para começar...");
         button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 HomeActivity.this.startKioskActivity();
@@ -43,7 +43,7 @@ public class HomeActivity extends Activity {
             public void run() {
                 HomeActivity.this.startKioskActivity();
             }
-        }, 20000); // 20 seconds
+        }, 10000); // 10 seconds
     }
     
     @Override
